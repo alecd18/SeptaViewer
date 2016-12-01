@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="?android:attr/listPreferredItemHeight"
+
+    android:padding="6dip">
+    <!-- Train Number label -->
+
+   <TextView
+       android:id="@+id/tnLabel"
+       android:layout_width="wrap_content"
+       android:layout_height="26dip"
+       android:layout_alignParentLeft="true"
+       android:layout_alignParentTop="true"
+       android:ellipsize="marquee"
+       android:singleLine="true"
+       android:textStyle="bold" />
+
+       <!-- Train Number Data -->
+
+   <TextView
+       android:id="@+id/tnData"
+       android:layout_width="250dp"
+       android:layout_height="26dip"
+       android:layout_alignParentTop="true"
+       android:layout_toRightOf="@id/tnLabel"
+       android:ellipsize="marquee"
+       android:singleLine="true" />
+
+   <!-- Departure Time Label -->
+
+   <TextView
+       android:id="@+id/dtLabel"
+       android:layout_width="wrap_content"
+       android:layout_height="26dip"
+       android:layout_alignParentLeft="true"
+       android:layout_below="@id/tnLabel"
+       android:gravity="center_vertical"
+       android:textStyle="bold" />
+
+   <!-- Departure Time Data -->
+
+   <TextView
+       android:id="@+id/dtData"
+       android:layout_width="250dp"
+       android:layout_height="26dip"
+       android:layout_below="@id/tnData"
+       android:layout_toRightOf="@id/dtLabel"
+       android:ellipsize="marquee"
+       android:gravity="center_vertical"
+       android:singleLine="true"
+       android:width="200dp" />
+
+   	<!-- Arrival Time Label -->
+
+   <TextView
+       android:id="@+id/atLabel"
+       android:layout_width="wrap_content"
+       android:layout_height="26dip"
+       android:layout_alignParentLeft="true"
+       android:layout_below="@id/dtLabel"
+       android:gravity="center_vertical"
+       android:textStyle="bold" />
+
+   <!-- Arrival Time Data -->
+
+      <TextView
+          android:id="@+id/atData"
+          android:layout_width="250dp"
+          android:layout_height="26dip"
+          android:layout_alignParentRight="true"
+          android:layout_below="@id/dtData"
+          android:layout_toRightOf="@id/atLabel"
+          android:ellipsize="marquee"
+          android:gravity="center_vertical"
+          android:singleLine="true"
+          android:width="200dp" />
+
+</RelativeLayout>

@@ -1,0 +1,72 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.septaviewer.MainActivity"
+    tools:ignore="MergeRootFrame" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="Source"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="40sp" />
+
+    <Spinner
+        android:id="@+id/Source"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView1" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/Source"
+        android:text="Destination"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="40sp" />
+
+    <Spinner
+        android:id="@+id/Destination"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView2" />
+
+    <Button
+        android:id="@+id/btnGetTrainTimes"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Destination"
+        android:layout_centerHorizontal="true"
+        android:text="GET ALL TRAIN TIMES"
+        android:textSize="25sp"
+        android:onClick="getTrainTimes" />
+
+    <ListView
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="420dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/btnGetTrainTimes" >
+    </ListView>
+
+    <Button
+        android:id="@+id/btnViewMaps"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btnGetTrainTimes"
+        android:layout_alignRight="@+id/btnGetTrainTimes"
+        android:layout_below="@+id/list"
+        android:text="VIEW GOOGLE MAPS"
+        android:textSize="25sp"
+        android:onClick="viewMaps" />
+
+</RelativeLayout>
